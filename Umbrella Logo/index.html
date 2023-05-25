@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umbrella Customs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Main Component -->
+    <div id="main-container" class="umbrella-theme-skyblue">
+        <div id="img-show" class="umbrella-img umbrella-img-blue">
+            <img src="./assets/Blue umbrella.png" alt="Skyblue Umbrella" height="100" width="100" />
+        </div>
+
+        <div id="umbrella-actions-area">
+            <h1 class="umbrella-header">Custom Umbrella</h1>
+
+            <!-- Dynamic Content -->
+            <div id="color-options-div"></div> 
+
+            <!-- Description -->
+            <div>
+              <p class="sub-title">Customize your Umbrella</p>
+              <p class="sub-title-2">Upload a logo for instant preview</p>
+              <p class="description">.png and .jpg files only. Max size is 5MB.</p>
+
+              <!-- Upload Button -->
+              <button id="upload-btn" type="button">
+                UPLOAD IMAGE
+                <img id="upload-icon" src="./assets/upload_icon.svg" alt="upload icon" />
+                <div id="upload-cancel-icon">X</div>
+              </button>
+              <input type="file" id="file-input" style="visibility: hidden;">
+            </div>
+
+        </div>
+    </div>
+
+	<script src="index.js"></script>
+  </body>
+</html>
