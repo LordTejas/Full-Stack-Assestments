@@ -14,8 +14,10 @@
 
     <!-- Main Component -->
     <div id="main-container" class="umbrella-theme-skyblue">
-        <div id="img-show" class="umbrella-img umbrella-img-blue">
-            <img src="./assets/Blue umbrella.png" alt="Skyblue Umbrella" height="100" width="100" />
+        <div id="img-show">
+            <svg id="loader-img"></svg>
+            <img id="umbrella-img" src="./assets/Blue umbrella.png" alt="Umbrella" height="100" width="100" />
+            <img id="umbrella-logo" src="./assets/" alt="Umbrella Logo" height="100" width="100" style="display: none;" />
         </div>
 
         <div id="umbrella-actions-area">
@@ -32,11 +34,11 @@
 
               <!-- Upload Button -->
               <button id="upload-btn" type="button">
-                UPLOAD IMAGE
+                <div id="upload-btn-text">UPLOAD LOGO</div>
                 <img id="upload-icon" src="./assets/upload_icon.svg" alt="upload icon" />
                 <div id="upload-cancel-icon">X</div>
               </button>
-              <input type="file" id="file-input" style="visibility: hidden;">
+              <input type="file" id="file-input" style="display: none;">
             </div>
 
         </div>
